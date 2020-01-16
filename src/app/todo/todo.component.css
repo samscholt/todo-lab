@@ -1,0 +1,20 @@
+li {
+    line-height: 2;
+}
+button {
+    border: 1px solid violet;
+    border-radius: 5px;
+    color: violet;
+    background-color: white;
+}
+button:active {
+    color: white;
+    background-color: violet;
+}
+.completed {
+    text-decoration: line-through;
+}
+.close-button {
+    color: gray;
+    float: right;
+}

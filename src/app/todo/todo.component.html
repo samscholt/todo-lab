@@ -1,0 +1,4 @@
+<li *ngIf="!clicked" [ngClass]="{'completed': completed}">
+    <button *ngIf="!completed" (click)="completed=true">Complete</button> {{task}}
+    <span class="close-button">X</span>
+</li>

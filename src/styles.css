@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, violet, salmon)
+}
+main {
+    background-color: white;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
