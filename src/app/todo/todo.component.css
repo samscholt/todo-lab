@@ -1,20 +1,21 @@
 li {
     line-height: 2;
 }
-button {
-    border: 1px solid violet;
+.complete-button {
+    border: 1px solid #ff69b4;
     border-radius: 5px;
-    color: violet;
+    color: #ff69b4;
     background-color: white;
 }
-button:active {
+.complete-button:active {
     color: white;
-    background-color: violet;
+    background-color: #ff69b4;
 }
 .completed {
     text-decoration: line-through;
 }
 .close-button {
-    color: gray;
+    background-color: white;
+    border: none;
     float: right;
 }

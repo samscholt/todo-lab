@@ -1,14 +1,15 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 body {
-    background-image: linear-gradient(to right, violet, salmon)
+    background-image: linear-gradient(to right, #f857a6, #ff5858)
 }
 main {
     background-color: white;
     width: 70vw;
     margin: 0 auto;
     padding: 25px;
-    border: 1px solid gray;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }

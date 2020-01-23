@@ -1,13 +1,14 @@
 <h1>TODO List</h1>
 <p>A place to store your todos</p>
 
-<form>
-    <input type="text" placeholder="Filter your to-dos">
-    <ol>
-        <div *ngFor="let todo of todos;">
-            <todo [completed]="todo.completed" [task]="todo.task"></todo>
-        </div>
-    </ol>
-    <input type="text" placeholder="Add your to-do">
-    <button>Add</button>
+<input type="text" [(ngModel)]="searchText" placeholder="Filter your to-dos">
+<ol>
+    <div>
+        <todo *ngFor="let todo of (todos | filter : searchText); let i = index;" (deleted)="removeItem(i)" [completed]="todo.completed" [task]="todo.task"></todo>
+    </div>
+</ol>
+
+<form (submit)="addTask(addText)">
+    <input type="text" [(ngModel)]="addText" name="addText" placeholder="Add your to-do">
+    <button type="submit">Add</button>
 </form>

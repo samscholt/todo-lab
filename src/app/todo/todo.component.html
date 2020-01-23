@@ -1,4 +1,5 @@
-<li *ngIf="!clicked" [ngClass]="{'completed': completed}">
-    <button *ngIf="!completed" (click)="completed=true">Complete</button> {{task}}
-    <span class="close-button">X</span>
+<li>
+    <button class="complete-button" *ngIf="!completed" (click)="completeTask()">Complete</button>
+    <span [ngClass]="{'completed': completed}"> {{task}} </span>
+    <button class="close-button" (click)="onDelete()">X</button>
 </li>

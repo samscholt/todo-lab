@@ -34,4 +34,14 @@ export class AppComponent {
       task: 'Clean the bathroom'
     },
   ];
+
+  removeItem(i : number) {
+    this.todos.splice(i, 1);
+  }
+
+  addTask(addText : string) {
+    if (addText) {    // prevents adding an empty string
+      this.todos.push({completed: false, task: addText});
+    }
+  }
 }
